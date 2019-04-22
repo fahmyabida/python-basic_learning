@@ -1,5 +1,4 @@
 # install dill to get name of object
-from dill.source import getname
 
 # 1.a
 class MyClass:
@@ -35,7 +34,7 @@ array_obj = [obj_1, obj_2, obj_3, obj_4, obj_5, obj_6, obj_7, obj_8, obj_9, obj_
 # 2.a
 comprehension = [ obj for obj in array_obj if obj.int_var % 2 == 1]
 comprehension_check_only = [ obj.str_var for obj in array_obj if obj.int_var % 2 == 1]
-print comprehension_check_only
+print (comprehension_check_only)
 
 # 3 finally
 print (obj_5.check(True, 1)) # karena parameter bernilai 1 lebih kecil dari pd 5
